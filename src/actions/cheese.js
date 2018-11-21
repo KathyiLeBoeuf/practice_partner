@@ -21,7 +21,6 @@ export const fetchCheeses = () => {
 	return fetch(`/api/cheeses`)
 		.then(res => res.json())
 		.then((res) => {
-			console.log(res);
 			dispatch(fetchCheesesSuccess(res));
 		})
 		.catch((err) => {
