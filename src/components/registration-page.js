@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 import RegistrationForm from './registration-form';
-import NavBar from './nav-bar';
 
 export function RegistrationPage(props) {
 	// If we are logged in (which happens automatically when registration
@@ -13,7 +12,7 @@ export function RegistrationPage(props) {
 	}
 	return (
 		<div className="home">
-			<NavBar />
+
 			<RegistrationForm />
 		</div>
 	);
