@@ -7,11 +7,13 @@ import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 import CheeseList from './components/cheese-list.js'
+import RegistrationPage from './components/registration-page';
 
 ReactDOM.render(
 	<Provider store={store}>
 		{/* <App /> */}
 		<CheeseList />
+		<RegistrationPage />
 	</Provider >,
 	document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change

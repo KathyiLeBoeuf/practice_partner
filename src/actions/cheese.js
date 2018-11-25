@@ -18,6 +18,7 @@ export const fetchCheesesError = () => ({
 //async
 export const fetchCheeses = () => {
 	dispatch(fetchCheesesRequest());
+	console.log(fetchCheeses, "this is in cheese.action")
 	return fetch(`/api/cheeses`)
 		.then(res => res.json())
 		.then((res) => {
